@@ -15,4 +15,5 @@ const pages = {
     about : about.addPageContent()
 }
 
-new PageNavigation(navBarContainer, pageContentContainer, pages);
+const nav = new PageNavigation(navBarContainer, pageContentContainer, pages);
+nav.updatePage(pages.home);

@@ -24,4 +24,6 @@ export function PageNavigation(navBar, pageContentContainer, pagesContent) {
     const addNavigationEvents = () =>{ navBarEventHandler("click", clickNavController) };
 
     addNavigationEvents();
+
+    return { updatePage }
 };
