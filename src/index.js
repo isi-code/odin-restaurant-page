@@ -1,3 +1,4 @@
+import "./restaurant-styles.css";
 import { homepageContent, menuContent, aboutContent } from './page-contents.js'
 import { PageSectionGenerator } from './page-section-generator.js';
 import { PageNavigation } from './navigation.js';
