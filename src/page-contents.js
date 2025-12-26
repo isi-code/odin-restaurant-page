@@ -1,7 +1,7 @@
 const homepageContent = [
   // 1. WELCOME / HERO SECTION
   [
-    "<h3>Welcome to the Paradise</h3>",
+    "<h3>Welcome to the Gyros' Paradise</h3>",
     "<p>Experience the authentic taste of Kalavryta. From our family table to yours, we serve hand-crafted Greek street food made with <em>meraki</em> and the finest Mediterranean ingredients.</p>",
     "<button class='cta-button'>View Today's Menu</button>"
   ],
@@ -9,7 +9,7 @@ const homepageContent = [
   // 2. THE ABOUT SECTION (Integrated from your previous story)
   [
     "<h3>The Spirit of the Islands</h3>",
-    "<p>Founded in 1988, <strong>Gyro Paradise</strong> began with a single rotisserie and a secret family recipe. What started as a small seaside stall has grown into a local sanctuary for food lovers seeking the true soul of Mediterranean cooking.</p>",
+    "<p>Founded in 1988, <strong>Gyros' Paradise</strong> began with a single rotisserie and a secret family recipe. What started as a small seaside stall has grown into a local sanctuary for food lovers seeking the true soul of Mediterranean cooking.</p>",
     "<blockquote>'To eat at our table is to be part of our family.' — Mama Eleni, Founder</blockquote>"
   ],
 

@@ -6,7 +6,7 @@ import { PageNavigation } from './navigation.js';
 const navBarContainer = document.querySelector("header > nav");
 const pageContentContainer = document.getElementById("content");
 
-const home = new PageSectionGenerator("Gyro Paradise", homepageContent);
+const home = new PageSectionGenerator("Gyros' Paradise", homepageContent);
 const menu = new PageSectionGenerator("Menu", menuContent);
 const about = new PageSectionGenerator("About", aboutContent);
 
