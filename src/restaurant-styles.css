@@ -53,6 +53,15 @@ nav button:hover { background: white; }
 	text-align: center;
 }
 
+#content section img {
+	display: block;
+	margin: 1rem auto;
+	width: 80%;
+	max-width:400px;
+	max-height:400px;
+	object-fit: cover;
+}
+
 #content section button { 
 	background-color: white;
 	border: 0.5rem rgb(221, 223, 228) solid;

@@ -3,7 +3,6 @@ const homepageContent = [
   [
     "<h3>Welcome to the Gyros' Paradise</h3>",
     "<p>Experience the authentic taste of Kalavryta. From our family table to yours, we serve hand-crafted Greek street food made with <em>meraki</em> and the finest Mediterranean ingredients.</p>",
-    "<button class='cta-button'>View Today's Menu</button>"
   ],
 
   // 2. THE ABOUT SECTION (Integrated from your previous story)
@@ -18,6 +17,7 @@ const homepageContent = [
     "<h3>Chef's Recommendation</h3>",
     "<div class='featured-dish'>",
     "<h4>The Olympian Gyro Platter</h4>",
+    '<img src="https://images.unsplash.com/photo-1734974121561-11aee7d3cebd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">',
     "<p>A massive serving of our 24-hour marinated lamb and beef, served with feta-dusted fries, house-made tzatziki, and warm pita bread. Perfect for sharing—or for one very hungry hero.</p>",
     "<strong>$18.50</strong>",
     "</div>"
@@ -58,6 +58,7 @@ const menuContent = [
     "<li><strong>Trio of Dips:</strong> Tzatziki, Hummus, and Tirokafteri (spicy feta) with warm pita. - $14.00</li>",
     "</ul>",
     "<h3>Signature Gyros</h3>",
+    "<img src='https://images.unsplash.com/photo-1638865328079-0a3985220f9c?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>",
     "<p><em>Wrapped in warm, fluffy pita with tomatoes, red onions, tzatziki, and a few crispy fries inside.</em></p>",
     "<table>",
     "<tr><td><strong>Classic Lamb & Beef:</strong> Our traditional rotisserie blend.</td><td>$13.50</td></tr>",
@@ -66,6 +67,7 @@ const menuContent = [
     "<tr><td><strong>The Veggie Paradise:</strong> Grilled halloumi, roasted peppers, and hummus.</td><td>$11.50</td></tr>",
     "</table>",
     "<h3>Entrée Platters</h3>",
+    "<img src='https://images.unsplash.com/photo-1702741168115-cd3d9a682972?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>",
     "<p><em>Served with Greek salad, lemon rice pilaf, pita, and extra tzatziki.</em></p>",
     "<ul>",
     "<li><strong>The Spartan Feast:</strong> A sampling of lamb, chicken, and pork gyros. - $24.00</li>",
@@ -75,6 +77,7 @@ const menuContent = [
   ],
   [
     "<h3>Drinks & Refreshments</h3>",
+    "<img src='https://images.unsplash.com/photo-1547737992-582b4bbef433?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>",
     "<table>",
     "<tr>",
     "<td><strong>Greek Frappé</strong><br><small>The iconic foam-covered iced coffee, shaken with water and sugar.</small></td>",
