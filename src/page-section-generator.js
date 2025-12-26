@@ -1,11 +1,11 @@
-export function PageContentGenerator(title, pageSections) {
+export function PageSectionGenerator(title, pageSections) {
   if (!new.target) {
     throw Error("new keyword wasn't used");
   }
   this.pageTitle = title;
   this.pageSections = pageSections;
 }
-PageContentGenerator.prototype.createPageTitleSection = function () {
+PageSectionGenerator.prototype.createPageTitleSection = function () {
 // Create an individual section that contains title to later be added to the main content div
   const titleSection = document.createElement("section");
   titleSection.setAttribute("id", "title-section");
@@ -16,7 +16,7 @@ PageContentGenerator.prototype.createPageTitleSection = function () {
 
   return titleSection;
 };
-PageContentGenerator.prototype.generatePageContent = function () {
+PageSectionGenerator.prototype.addPageContent = function () {
 // A new section is created returning containing all the page content to later be added to page
   const pageContent = [];
   pageContent.push(this.createPageTitleSection());

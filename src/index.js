@@ -1,15 +1,15 @@
 import { homepageContent, menuContent, aboutContent } from './page-contents.js'
-import { PageContentGenerator } from './page-content-generator.js';
+import { PageSectionGenerator } from './page-section-generator.js';
 import { PageNavigation } from './navigation.js';
 
-const home = new PageContentGenerator("Gyro Paradise", homepageContent);
-const menu = new PageContentGenerator("Menu", menuContent);
-const about = new PageContentGenerator("About", aboutContent);
+const home = new PageSectionGenerator("Gyro Paradise", homepageContent);
+const menu = new PageSectionGenerator("Menu", menuContent);
+const about = new PageSectionGenerator("About", aboutContent);
 
 const pages = { 
-    home : home.generatePageContent(),
-    menu : menu.generatePageContent(), 
-    about : about.generatePageContent()
+    home : home.addPageContent(),
+    menu : menu.addPageContent(), 
+    about : about.addPageContent()
 }
 
 const navBarContainer = document.querySelector("header > nav");
