@@ -3,3 +3,44 @@
 	padding: 0;
 	margin: 0;
 }
+
+body{
+	background-color: rgb(0, 153, 255);
+}
+
+header {
+	margin:1rem 0;
+}
+
+nav{
+	display:flex;
+	gap: calc((100% / 3) / 3);
+	border-top:1rem white solid;
+	border-bottom:1rem white solid;
+}
+
+nav button {
+	flex: 1;
+	cursor: pointer;
+	padding: 0.8rem 2rem;
+	background: whitesmoke;
+	border: none;
+}
+
+nav button:hover { background: white; }
+
+#content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2.5rem;
+	width: 80%;
+	max-width: 55rem;
+	margin: auto;
+}
+
+#content section {
+	background-color: whitesmoke;
+	padding: 2rem;
+	border: 1rem white solid;
+}
