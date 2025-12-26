@@ -2,7 +2,7 @@ export function PageContentRenderer(pageContainer) {
   if (!new.target) {
     throw Error("new keyword wasn't used");
   }
-  this.pageContentContainer = document.getElementById(pageContainer);
+  this.pageContentContainer = pageContainer;
   this.removePageContent();
 }
 PageContentRenderer.prototype.removePageContent = function () {
