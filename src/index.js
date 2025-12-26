@@ -1,51 +1,5 @@
-function PageContentGenerator(title, pageSections) {
-  if (!new.target) {
-    throw Error("new keyword wasn't used");
-  }
-  this.pageTitle = title;
-  this.pageSections = pageSections;
-}
-PageContentGenerator.prototype.createPageTitleSection = function () {
-// Create an individual section that contains title to later be added to the main content div
-  const titleSection = document.createElement("section");
-  titleSection.setAttribute("id", "title-section");
-  const titleTag = document.createElement("h1");
-
-  titleTag.textContent = this.pageTitle;
-  titleSection.append(titleTag);
-
-  return titleSection;
-};
-PageContentGenerator.prototype.generatePageContent = function () {
-// A new section is created returning containing all the page content to later be added to page
-  const pageContent = [];
-  pageContent.push(this.createPageTitleSection());
-
-  this.pageSections.forEach((pageSectionContent) => {
-    const pageSection = document.createElement("section");
-    pageSection.innerHTML = pageSectionContent.join("");
-    pageContent.push(pageSection);
-  });
-
-  return pageContent;
-};
-
-function PageContentRenderer(pageContainer) {
-  if (!new.target) {
-    throw Error("new keyword wasn't used");
-  }
-  this.pageContentContainer = document.getElementById(pageContainer);
-  this.removePageContent();
-}
-PageContentRenderer.prototype.removePageContent = function () {
-// Remove all present content when function is called clean content to render new content
-  while (this.pageContentContainer.lastChild) {
-    this.pageContentContainer.lastChild.remove();
-  }
-};
-PageContentRenderer.prototype.renderPageContent = function (pageContent) {
-  this.pageContentContainer.append(...pageContent);
-};
+import { PageContentGenerator } from './page-content-creator.js';
+import { PageContentRenderer } from './page-renderer.js';
 
 const homepageContent = [
   [
@@ -95,9 +49,8 @@ const homepageContent = [
   ],
 ];
 
-const homePage = new PageContentGenerator(
-  "Greek Cuisine Paradise",
-  homepageContent
-);
 const pageRenderer = new PageContentRenderer("content");
+
+const homePage = new PageContentGenerator("Greek Cuisine Paradise", homepageContent);
+
 pageRenderer.renderPageContent(homePage.generatePageContent());
